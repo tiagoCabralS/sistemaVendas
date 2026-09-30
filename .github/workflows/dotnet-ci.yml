@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+	branches: [ master, main ]
+  pull_request:
+	branches: [ master, main ]
+
+jobs:
+  build:
+	runs-on: windows-latest
+
+	steps:
+	  - uses: actions/checkout@v4
+
+	  - name: Setup .NET
+		uses: actions/setup-dotnet@v3
+		with:
+		  dotnet-version: '10.0.x'
+
+	  - name: Restore
+		run: dotnet restore ./projetoVendas.slnx
+
+	  - name: Build
+		run: dotnet build ./projetoVendas.slnx --configuration Release --no-restore
