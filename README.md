@@ -25,9 +25,3 @@ Verifique a licença no repositório ou contate o mantenedor.
 
 Melhorias futuras
 - Integração com banco de dados: substituir o armazenamento interno por um banco relacional (ex.: SQL Server, SQLite) usando Entity Framework Core com migrações.
-- Autenticação e autorização: adicionar login de usuário, perfis e controle de permissões.
-- Testes automatizados: incluir projetos de testes unitários e de integração.
-- Exportação/relatórios: gerar relatórios em PDF/CSV e dashboards simples.
-- Validações e UX: melhorar validações, mensagens de erro e responsividade da interface.
-- Internacionalização: suporte a múltiplos idiomas.
-- Empacotamento e distribuição: criar instalador MSI ou pacote para distribuição.
